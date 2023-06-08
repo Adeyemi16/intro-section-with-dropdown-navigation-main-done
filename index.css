@@ -43,6 +43,18 @@
   gap: 60px;
  }
 
+ .bodyb{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--Almost-White);
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+   }
+
  nav{
     display: flex;
     flex-direction: row;
@@ -174,6 +186,8 @@ main{
     width: 70%;
     justify-content: space-between;
     align-items: center;
+    /* transition: 2s;
+    animation: forwards; */
 }
 
 @media screen and (max-width:600px) {
@@ -187,14 +201,13 @@ main{
         position: absolute;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
-        width: 100%;
-        /* left: 26%; */
-        /* right: 5%; */
+        justify-content: flex-start;
+        gap: 60px;
+        padding-top: 20px;
+        width: 100vw;
         height: 100vh;
         top: 0%;
         background: var(--Almost-White);
-        /* box-shadow: -20px 0px 10px 0px var(--Medium-Gray); */
      }
 
      .register{
@@ -204,9 +217,14 @@ main{
         background: var(--Almost-White);
         color: var(--Medium-Gray);
         font-weight: var(--md-Weight);
-        width: 240px;
-        height: 50px;
-        border-radius: 20px;
+        font-size: xx-large;
+        width: 250px;
+        height: 77px;
+        border-radius: 30px;
+     }
+
+     ul{
+        gap: 50px;
      }
     
      .register:hover{
@@ -218,10 +236,11 @@ main{
      .buttons{
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 37px;
+        margin: 0;
+        padding: 0;
         align-items: center;
         justify-content: center;
-        width: 100%;
      }
 
      .links{
@@ -279,7 +298,7 @@ main{
     }
 
     .regular{
-        font-size: x-large;
+        font-size: xx-large;
         margin: 0;
     }
 
@@ -289,6 +308,7 @@ main{
 
     .hide{
         display: flex;
+        /* align-self: flex-start; */
     }
     .logo{
         display: flex;
@@ -301,7 +321,7 @@ main{
     }
 
     #svgb{
-        margin-left: 90%;
+        margin-left: 80%;
     }
 }
 
