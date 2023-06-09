@@ -1,6 +1,7 @@
 let svg = document.getElementById('svg')
 let svgb = document.getElementById('svgb')
-
+let link = document.getElementById('link');
+let linkb = document.getElementById('linkb');
 
 
 
@@ -18,4 +19,26 @@ svgb.addEventListener('click', () => {
     flex.classList.remove('flexb')
     let body = document.getElementById('body');
     body.classList.remove('bodyb')
+})
+
+link.addEventListener('click', () => {
+    let features = document.getElementById('features');
+    features.classList.toggle('hide')
+    features.classList.toggle('features')
+
+    let svg = document.getElementById('down');
+    svg.classList.toggle('hideb');
+    let svgb = document.getElementById('up');
+    svgb.classList.toggle('hideb')
+})
+
+linkb.addEventListener('click', () => {
+    let features = document.getElementById('featuresb');
+    features.classList.toggle('hide')
+    features.classList.toggle('featuresb')
+
+    let svg = document.getElementById('downb');
+    svg.classList.toggle('hideb');
+    let svgb = document.getElementById('upb');
+    svgb.classList.toggle('hideb')
 })
