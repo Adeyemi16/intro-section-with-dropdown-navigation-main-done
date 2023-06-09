@@ -3,8 +3,6 @@ let svgb = document.getElementById('svgb')
 let link = document.getElementById('link');
 let linkb = document.getElementById('linkb');
 
-
-
 svg.addEventListener('click', () => {
     let flex = document.getElementById('flex');
     flex.classList.remove('flex')
